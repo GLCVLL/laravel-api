@@ -28,7 +28,6 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**
@@ -36,7 +35,9 @@ class ProjectController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $project = Project::all()->find($id);
+        if (!$project) return response(null, 404);
+        return response()->json($project);
     }
 
     /**
