@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>ciaooooo nuovo messaggio</h1>
+    <P>{{ $content }}</P>
 </body>
 
 </html>
